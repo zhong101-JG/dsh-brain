@@ -1,0 +1,25 @@
+# ── 依赖 ──
+node_modules/
+
+# ── 模型（首次运行自动下载；二进制不进 git）──
+models/
+models-cache/
+
+# ── 备份与实验残留 ──
+*.bak
+*.bak-*
+_bak/
+_backup/
+_stage/
+_atomic-test/
+
+# ── 记忆数据：程序与记忆分开，绝不进仓库 ──
+#（默认在 ~/.dsh/brain-data/，不在仓库里；这里只是兜底）
+data/
+ledger.md
+persona.md
+state.md
+archive/
+index/
+*.jsonl
+*.log

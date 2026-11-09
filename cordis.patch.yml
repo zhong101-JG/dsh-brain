@@ -1,0 +1,6 @@
+# dsh-brain —— 小鲸歌的脑袋瓜
+# 插件挂载声明：DSH 启动时把本插件插进 profile 的配置树。
+- insert:
+    - id: dsh-brain
+      name: dsh-brain
+      config: {}

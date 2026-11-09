@@ -1,0 +1,34 @@
+{
+  "name": "dsh-brain",
+  "version": "0.1.0",
+  "description": "小鲸歌的脑袋瓜：给每一轮注入「现在几点 · 距上次对话多久」，外加一键备份。",
+  "author": "大肥鱼-小鲸歌",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@huggingface/transformers": "^4.3.1"
+  }
+}
