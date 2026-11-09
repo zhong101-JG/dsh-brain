@@ -1,8 +1,8 @@
 {
   "name": "dsh-brain",
   "version": "0.1.0",
-  "description": "小鲸歌的脑袋瓜：给每一轮注入「现在几点 · 距上次对话多久」，外加一键备份。",
-  "author": "大肥鱼-小鲸歌",
+  "description": "给 DSH 的记忆外挂：时间感知 / 回来提醒 / 关键词+向量回忆 / 3D 星图 / 设置页 / 一键备份。",
+  "author": "小鲸歌",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
