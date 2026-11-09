@@ -34,6 +34,8 @@ dsh plugin --profile desktop add link:<插件绝对路径>
 首次启动会下载向量模型 `bge-small-zh-v1.5`（量化版约 23MB）到插件目录的 `models/`。
 想纯离线就把 `allowRemoteModels` 设成 `false`。
 
+首次启动还会自动建好数据目录和一本空账本（`<dataDir>/ledger.md`），不用手动准备文件。
+
 ## 配置
 
 全部写 `~/.dsh/brain/config.json`，**每一个字段都可选**：
